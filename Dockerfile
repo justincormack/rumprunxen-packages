@@ -13,3 +13,6 @@ RUN \
   cd rumprun-packages && \
   echo "RUMPRUN_TOOLCHAIN_TUPLE=x86_64-rumprun-netbsd" > config.mk && \
   make world
+
+RUN \
+  for f in */bin/*; do rumpbake xen_pv $f $f; done
