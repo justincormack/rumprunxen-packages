@@ -1,8 +1,5 @@
 FROM justincormack/rumprunxen
 
-# temp
-RUN apt-get install -y cmake
-
 MAINTAINER Justin Cormack <justin@specialbusservice.com>
 
 WORKDIR /usr/src/rumprun-packages
